@@ -1,0 +1,19 @@
+directories:
+  output: release
+  buildResources: build
+appId: com.hardwaremanager.app
+productName: Magoomu Enterprises(Hardware)
+files:
+  - filter:
+      - dist/**
+      - electron/**
+      - package.json
+win:
+  target: nsis
+  icon: public/icon.ico
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+electronVersion: 33.4.11
